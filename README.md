@@ -6,7 +6,9 @@ The only file to change is main.py.
 ## How to test
 replace \<project_name\> to your_project_name  
 access root  
-$ curl -s http://\<project_name\>.azurewebsites.net/  
+```
+$ curl -s http://<project_name>.azurewebsites.net/  
+```
 append user  
 $ curl -s -H "Content-type: application/json; charset=UTF-8" -X POST -d "{\\"command\\":\\"append\\",\\"name\\":\\"foo\\",\\"age\\":\\"16\\"}" http://\<project_name\>.azurewebsites.net/api  
 append another user  
