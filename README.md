@@ -34,13 +34,14 @@ The only file to change is main.py.
 5 Preparation for deployment (one time only in the mac's terminal)  
 ```
 $ git remote add azure <repository>
+$ git pull azure master
 ```
-7 Deploy to azure (Deployment credentials's password required)  
+6 Deploy to azure (Deployment credentials's password required)  
 ```
 $ git commit -am 'your comment'
 $ git push azure master
 ```
-8 After editing the program repeat 7  
+7 After editing the program repeat 6  
 
 ## How to test from mac's terminal
 replace \<app_name\> to your webapp name  
